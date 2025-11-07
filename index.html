@@ -14,17 +14,19 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: white;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
         header {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             color: white;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            backdrop-filter: blur(10px);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
@@ -61,7 +63,7 @@
         }
 
         .hero {
-            background: white;
+            background: linear-gradient(to right, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
             color: white;
             padding: 150px 2rem 100px;
             text-align: center;
@@ -79,7 +81,7 @@
             font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.95;
-            color: white;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .cta-button {
@@ -118,9 +120,10 @@
         }
 
         .feature-card {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: 10px;
+            backdrop-filter: blur(10px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s;
             text-align: center;
@@ -142,7 +145,7 @@
         }
 
         .feature-card p {
-            color: white;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .section {
@@ -168,6 +171,9 @@
 
         .stat {
             padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
         }
 
         .stat-number {
@@ -177,12 +183,12 @@
         }
 
         .stat-label {
-            color: white;
+            color: rgba(255, 255, 255, 0.9);
             margin-top: 0.5rem;
         }
 
         .testimonials {
-            background: #f8f9fa;
+            background: rgba(255, 255, 255, 0.05);
             padding: 4rem 2rem;
         }
 
@@ -195,9 +201,10 @@
         }
 
         .testimonial {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: 10px;
+            backdrop-filter: blur(10px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             color: white;
         }
@@ -205,16 +212,16 @@
         .testimonial p {
             font-style: italic;
             margin-bottom: 1rem;
-            color: white;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .testimonial-author {
-            color: white;
+            color: rgba(255, 255, 255, 0.8);
             font-weight: bold;
         }
 
         footer {
-            background: #333;
+            background: rgba(0, 0, 0, 0.2);
             color: white;
             text-align: center;
             padding: 2rem;
@@ -303,7 +310,7 @@
         </div>
     </section>
 
-    <section id="about" class="section" style="background: #f8f9fa;">
+    <section id="about" class="section" style="background: rgba(255, 255, 255, 0.05);">
         <h2>By The Numbers</h2>
         <div class="stats">
             <div class="stat">
@@ -330,16 +337,16 @@
             <h2>What Our Clients Say</h2>
             <div class="testimonial-grid">
                 <div class="testimonial">
-                    <p>"Software Inc. transformed how we operate. The results were immediate and the support was outstanding."</p>
+                    <p>\"Software Inc. transformed how we operate. The results were immediate and the support was outstanding.\"</p>
                     <div class="testimonial-author">- John Smith, CEO at TechCorp</div>
                 </div>
                 <div class="testimonial">
-                    <p>"Best investment we made this year. The platform is intuitive, powerful, and has saved us countless hours."</p>
+                    <p>\"Best investment we made this year. The platform is intuitive, powerful, and has saved us countless hours.\"</p>
                     <div class="testimonial-author">- Sarah Johnson, Founder at StartupHub</div>
                 </div>
                 <div class="testimonial">
-                    <p>"Their team went above and beyond to ensure a smooth implementation. Highly recommended!"</p>
-                    <div class="testimonial-author">- Michael Chen, CTO at InnovateLabs</div>
+                    <p>\"Their team went above and beyond to ensure a smooth implementation. Highly recommended!\"</p>
+                    <div class="testimonial-author\">- Michael Chen, CTO at InnovateLabs</div>
                 </div>
             </div>
         </div>
@@ -347,7 +354,7 @@
 
     <section id="contact" class="section">
         <h2>Ready to Get Started?</h2>
-        <p style="text-align: center; margin: 2rem 0; font-size: 1.1rem;">Join thousands of companies transforming their business with Software Inc.</p>
+        <p style="text-align: center; margin: 2rem 0; font-size: 1.1rem; color: white;">Join thousands of companies transforming their business with Software Inc.</p>
         <div style="text-align: center;">
             <button class="cta-button">Schedule a Demo</button>
         </div>
